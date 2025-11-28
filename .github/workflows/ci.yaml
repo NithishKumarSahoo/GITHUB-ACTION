@@ -1,7 +1,12 @@
 name: CI pipeline
 on:
-  schedule:
-    - cron: '* * * * *'
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
     build:
      runs-on: ubuntu-latest
@@ -20,3 +25,5 @@ jobs:
           run: echo "${{ runner.os }}"
         - name: Show Github Repository
           run: echo "${{ github.repository }}"
+        - name: Github Secret
+          run: echo "${{secrets.SECRET_MESSAGE}}"
