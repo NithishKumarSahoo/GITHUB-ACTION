@@ -26,4 +26,4 @@ jobs:
         - name: Show Github Repository
           run: echo "${{ github.repository }}"
         - name: Github Secret
-          run: echo "${{secrets.SECRET_MESSAGE}}"
+          run: echo "secret is ${{secrets.SECRET_MESSAGE}}"
