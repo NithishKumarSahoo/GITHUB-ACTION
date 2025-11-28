@@ -1,8 +1,5 @@
 name: Hello world workflow
-on: 
-  push:
-    branches:
-      -main
+on: Pull Request
 jobs:
     hello_worls:
       runs-on: ubuntu-latest
