@@ -1,0 +1,25 @@
+{
+  "name": "github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo 'test successful'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NithishKumarSahoo/GITHUB-ACTION.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NithishKumarSahoo/GITHUB-ACTION/issues"
+  },
+  "homepage": "https://github.com/NithishKumarSahoo/GITHUB-ACTION#readme",
+  "devDependencies": {
+    "jtest": "^0.0.1"
+  }
+}
