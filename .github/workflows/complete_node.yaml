@@ -97,4 +97,4 @@ jobs:
  
     steps:
       - name: Final summary
-        run: echo "CI pipeline completed successfully.
+        run: echo "CI pipeline completed successfully."
