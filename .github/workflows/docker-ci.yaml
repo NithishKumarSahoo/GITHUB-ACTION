@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build docker image
         run: |
-         docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/myapp:ci .
+         docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/myapp:ci -f .github/workflows/Dockerfile .
       - name: Push docker image
         run: |
           docker push ${{ secrets.DOCKERHUB_TOKEN}}/myapp:ci
