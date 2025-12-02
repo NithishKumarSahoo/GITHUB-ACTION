@@ -1,10 +1,11 @@
 name: Hello world workflow
 on:
-  Push:
-    Branch: [ main ]
+  push:
+    branches: [ main ]
+  pull_request:
 
 jobs:
-    hello_worls:
+    hello_worlds:
       runs-on: ubuntu-latest
       steps:
         - name: Print Hello world
