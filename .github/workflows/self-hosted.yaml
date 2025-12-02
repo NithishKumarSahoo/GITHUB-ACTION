@@ -8,7 +8,8 @@ jobs:
     hello_worlds:
       runs-on: self-hosted
       steps:
+        - uses: actions/checkout@v4
         - name: Print Hello world
           run: echo "Hello Universe"
-        - uses: actions/checkout@v4
+        
           
