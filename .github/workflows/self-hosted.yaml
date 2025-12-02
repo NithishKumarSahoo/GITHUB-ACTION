@@ -6,7 +6,8 @@ on:
 
 jobs:
     hello_worlds:
-      runs-on: ubuntu-latest
+      runs-on: self-hosted
       steps:
         - name: Print Hello world
           run: echo "Hello Universe"
+          
